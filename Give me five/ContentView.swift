@@ -37,15 +37,18 @@ struct ContentView: View {
                     .font(.title)
                     .foregroundColor(.black)
                     .shadow(color: Color.black.opacity(0.5), radius: 3, x: 0, y: 2)
+                    .transition(.move(edge: .top)) // faire une animation de haut en bas
+
 
                 
-                .frame(width: 230, height: 200)
+                .frame(width: 250, height: 150)
                 .padding()
                 .background(Color.cyan.opacity(0.9))
                 .foregroundColor(Color.black)
                 .font(.title)
                 .cornerRadius(20)
                 .padding(.top)
+                .transition(.move(edge: .top)) // faire une animation de haut en bas
                 
                 
                 
@@ -53,9 +56,12 @@ struct ContentView: View {
                     .shadow(color: Color.black.opacity(0.5), radius: 3, x: 3, y: 8)
                     .font(.system(size: 30))
                     .padding(.bottom, 90) // Ajoute un espace en bas de l'image
+                    .transition(.move(edge: .top)) // faire une animation de haut en bas
+                
 
                 
             }
+
             
             
             
@@ -76,6 +82,7 @@ struct ContentView: View {
         
         
         }//fin body
+
     } // stuct
 
 #Preview {
